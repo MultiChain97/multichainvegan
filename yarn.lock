@@ -1992,9 +1992,9 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pancakeswap-libs/uikit@https://github.com/vegandefi/vegan-uikit":
-  version "0.10.4"
-  resolved "https://github.com/vegandefi/vegan-uikit#68f2c4484380d41a31fed0e404381efdebe5cfd9"
+"@pancakeswap-libs/uikit@veganswap-defi/vegan-uikit":
+  version "0.10.3"
+  resolved "https://codeload.github.com/veganswap-defi/vegan-uikit/tar.gz/e9b2f0f14cb29c3b477a229f4299196ff207cef9"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
