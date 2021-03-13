@@ -34,13 +34,13 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
             </Text>
           </RowFixed>
         </RowBetween>
-        <RowBetween>
+        {/* <RowBetween>
           <RowFixed>
             <Text fontSize="14px">Price Impact</Text>
             <QuestionHelper text="The difference between the market price and estimated price due to trade size." />
           </RowFixed>
           <FormattedPriceImpact priceImpact={priceImpactWithoutFee} />
-        </RowBetween>
+        </RowBetween> */}
 
         <RowBetween>
           <RowFixed>

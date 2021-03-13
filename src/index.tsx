@@ -1,5 +1,6 @@
 import React, { StrictMode } from 'react'
 import ReactDOM from 'react-dom'
+// eslint-disable-next-line import/no-unresolved
 import HttpsRedirect from 'react-https-redirect'
 import { ResetCSS } from '@pancakeswap-libs/uikit'
 import GlobalStyle from './style/Global'

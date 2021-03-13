@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://veganswap.finance/'
+    href: 'https://veganswap.finance/',
   },
   {
     label: 'Trade',
@@ -13,23 +13,23 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: '/swap'
+        href: '/swap',
       },
       {
         label: 'Liquidity',
-        href: '/pool'
-      }
-    ]
+        href: '/pool',
+      },
+    ],
   },
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://veganswap.finance/farms'
+    href: 'https://veganswap.finance/farms',
   },
   {
-    label: 'Nests',
+    label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://veganswap.finance/nests'
+    href: 'https://veganswap.finance/pools',
   },
   // {
   //   label: 'Lottery',
@@ -40,6 +40,10 @@ const config: MenuEntry[] = [
     label: 'Info',
     icon: 'InfoIcon',
     items: [
+      {
+        label: 'Roadmap',
+        href: 'https://vegandefi.medium.com/vegan-swap-roadmap-94d69f7653b',
+      },
       {
         label: 'Overview',
         href: 'https://pancakeswap.info/token/0x901e58695306b5c33c5169334e921a4cf4841571',
@@ -56,7 +60,7 @@ const config: MenuEntry[] = [
       //   label: 'AstroTools',
       //   href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
       // },
-    ]
+    ],
   },
   // {
   //   label: 'More',
