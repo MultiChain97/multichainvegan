@@ -16,6 +16,8 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
   const isExactIn = trade.tradeType === TradeType.EXACT_INPUT
   const slippageAdjustedAmounts = computeSlippageAdjustedAmounts(trade, allowedSlippage)
 
+  const isVeganInput = trade.inputAmount.currency.symbol === 'VEGAN';
+
   return (
     <Card>
       <CardBody>
@@ -34,13 +36,13 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
             </Text>
           </RowFixed>
         </RowBetween>
-        {/* <RowBetween>
+        {isVeganInput && <RowBetween>
           <RowFixed>
             <Text fontSize="14px">Price Impact</Text>
             <QuestionHelper text="The difference between the market price and estimated price due to trade size." />
           </RowFixed>
           <FormattedPriceImpact priceImpact={priceImpactWithoutFee} />
-        </RowBetween> */}
+        </RowBetween>}
 
         <RowBetween>
           <RowFixed>
