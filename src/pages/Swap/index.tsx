@@ -116,6 +116,8 @@ const Swap = () => {
         [Field.OUTPUT]: independentField === Field.OUTPUT ? parsedAmount : trade?.outputAmount,
       }
 
+  const isVeganInput = loadedOutputCurrency?.symbol === currencies[Field.OUTPUT]?.symbol
+
   const { onSwitchTokens, onCurrencySelection, onUserInput, onChangeRecipient } = useSwapActionHandlers()
   const isValid = !swapInputError
   const dependentField: Field = independentField === Field.INPUT ? Field.OUTPUT : Field.INPUT
@@ -450,9 +452,11 @@ const Swap = () => {
                     disabled={
                       !isValid || approval !== ApprovalState.APPROVED || (priceImpactSeverity > 3 && !isExpertMode)
                     }
-                    variant="primary"
+                    variant={isValid && priceImpactSeverity > 2 && isVeganInput ? 'danger' : 'primary'}
                   >
-                    {priceImpactSeverity > 3 && !isExpertMode ? `Price Impact High` : `Swap`}
+                    {priceImpactSeverity > 3 && !isExpertMode
+                      ? `Price Impact High`
+                      : `Swap${priceImpactSeverity > 2 && isVeganInput ? ' Anyway' : ''}`}
                   </Button>
                 </RowBetween>
               ) : (

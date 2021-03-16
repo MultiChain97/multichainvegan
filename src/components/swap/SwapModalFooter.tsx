@@ -35,6 +35,7 @@ export default function SwapModalFooter({
     trade,
   ])
   const { priceImpactWithoutFee, realizedLPFee } = useMemo(() => computeTradePriceBreakdown(trade), [trade])
+  const isVeganInput = trade.inputAmount.currency.symbol === 'VEGAN'
   const severity = warningSeverity(priceImpactWithoutFee)
 
   return (
@@ -80,13 +81,15 @@ export default function SwapModalFooter({
             </Text>
           </RowFixed>
         </RowBetween>
-        {/* <RowBetween>
-          <RowFixed>
-            <Text fontSize="14px">Price Impact</Text>
-            <QuestionHelper text="The difference between the market price and your price due to trade size." />
-          </RowFixed>
-          <FormattedPriceImpact priceImpact={priceImpactWithoutFee} />
-        </RowBetween> */}
+        {isVeganInput && (
+          <RowBetween>
+            <RowFixed>
+              <Text fontSize="14px">Price Impact</Text>
+              <QuestionHelper text="The difference between the market price and your price due to trade size." />
+            </RowFixed>
+            <FormattedPriceImpact priceImpact={priceImpactWithoutFee} />
+          </RowBetween>
+        )}
         <RowBetween>
           <RowFixed>
             <Text fontSize="14px">Liquidity Provider Fee</Text>
@@ -102,12 +105,12 @@ export default function SwapModalFooter({
         <Button
           onClick={onConfirm}
           disabled={disabledConfirm}
-          variant="primary"
+          variant={severity > 2 && isVeganInput ? 'danger' : 'primary'}
           mt="10px"
           id="confirm-swap-or-send"
           fullWidth
         >
-          Confirm Swap
+          {severity > 2 && isVeganInput ? 'Swap Anyway' : 'Confirm Swap'}
         </Button>
 
         {swapErrorMessage ? <SwapCallbackError error={swapErrorMessage} /> : null}
