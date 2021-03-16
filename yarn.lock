@@ -1993,8 +1993,8 @@
     toformat "^2.0.0"
 
 "@pancakeswap-libs/uikit@veganswap-defi/vegan-uikit":
-  version "0.10.11"
-  resolved "https://codeload.github.com/veganswap-defi/vegan-uikit/tar.gz/ea243c89c7b02035506178412ca6666f92c843c9"
+  version "0.10.12"
+  resolved "https://codeload.github.com/veganswap-defi/vegan-uikit/tar.gz/04b7c0339591e651a6fdeaa977611a1e0072509a"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
