@@ -31,6 +31,16 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: 'https://veganswap.finance/pools',
   },
+  {
+    label: 'Audits',
+    icon: 'AuditIcon',
+    items: [
+      {
+        label: 'Techrate',
+        href: 'https://veganswap.finance/files/techrateAudit.pdf',
+      },
+    ],
+  },
   // {
   //   label: 'Lottery',
   //   icon: 'TicketIcon',
