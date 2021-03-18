@@ -32,6 +32,11 @@ const config: MenuEntry[] = [
     href: 'https://veganswap.finance/pools',
   },
   {
+    label: 'Price Chart',
+    icon: 'ChartIcon',
+    href: 'https://veganswap.finance/chart'
+  },
+  {
     label: 'Audits',
     icon: 'AuditIcon',
     items: [
@@ -47,9 +52,18 @@ const config: MenuEntry[] = [
   //   href: 'https://www.goosedefi.com/lottery'
   // },
   {
-    label: 'Price Chart',
-    icon: 'ChartIcon',
-    href: 'https://veganswap.finance/chart'
+    label: 'Our Partners',
+    icon: 'GroupsIcon',
+    items: [
+      {
+        label: 'Whirl Finance',
+        href: 'https://www.whirl-finance.com/',
+      },
+      {
+        label: 'FlashX Ultra FSXU',
+        href: 'https://www.flashxcoinofficial.com/'
+      }
+    ],
   },
   {
     label: 'Listings',
