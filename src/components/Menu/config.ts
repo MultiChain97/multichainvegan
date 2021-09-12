@@ -34,6 +34,11 @@ const config: MenuEntry[] = [
     href: '',
   },
   {
+    label: ('IFO'),
+    icon: 'IfoIcon',
+    href: '/ifo',
+  },
+  {
     label: 'Price Chart-coming soon',
     icon: 'ChartIcon',
     href: ''
