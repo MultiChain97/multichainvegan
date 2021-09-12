@@ -76,10 +76,10 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Roadmap',
-        href: 'https://vegandefi.medium.com/vegan-swap-roadmap-94d69f7653b',
+        href: '',
       },
       {
-        label: 'PreSale',
+        label: 'Pre-Sale',
         href: '/',
       },
       // {
