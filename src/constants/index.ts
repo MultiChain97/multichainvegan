@@ -58,7 +58,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
       new Token(ChainId.MAINNET, '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
     ],
     [
-      new Token(ChainId.MAINNET, '0x901e58695306b5c33c5169334e921a4cf4841571', 18, 'VEGAN', 'VeganSwap Token'),
+      new Token(ChainId.MAINNET, '0x5a6707F5f7B68AFb7Fb1e05eE81a7a3a36E1441D', 18, 'VEGAN', 'VeganSwap Token'),
       new Token(ChainId.MAINNET, '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', 18, 'CAKE', 'PancakeSwap Token'),
     ],
     [
@@ -66,15 +66,15 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
       new Token(ChainId.MAINNET, '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
     ],
     [
-      new Token(ChainId.MAINNET, '0x901e58695306b5c33c5169334e921a4cf4841571', 18, 'VEGAN', 'VeganSwap Token'),
+      new Token(ChainId.MAINNET, '0x5a6707F5f7B68AFb7Fb1e05eE81a7a3a36E1441D', 18, 'VEGAN', 'VeganSwap Token'),
       new Token(ChainId.MAINNET, '0x7f479d78380ad00341fdd7322fe8aef766e29e5a', 18, 'WHIRL', 'WHIRL Token'),
     ],
     [
-      new Token(ChainId.MAINNET, '0x901e58695306b5c33c5169334e921a4cf4841571', 18, 'VEGAN', 'VeganSwap Token'),
+      new Token(ChainId.MAINNET, '0x5a6707F5f7B68AFb7Fb1e05eE81a7a3a36E1441D', 18, 'VEGAN', 'VeganSwap Token'),
       new Token(ChainId.MAINNET, '0x2170ed0880ac9a755fd29b2688956bd959f933f8', 18, 'ETH', 'ETH'),
     ],
     [
-      new Token(ChainId.MAINNET, '0x901e58695306b5c33c5169334e921a4cf4841571', 18, 'VEGAN', 'VeganSwap Token'),
+      new Token(ChainId.MAINNET, '0x5a6707F5f7B68AFb7Fb1e05eE81a7a3a36E1441D', 18, 'VEGAN', 'VeganSwap Token'),
       new Token(ChainId.MAINNET, '0xCa3F508B8e4Dd382eE878A314789373D80A5190A', 18, 'BIFI', 'BIFI'),
     ],
     [BUSD, USDT],
