@@ -1,10 +1,11 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
+import { ConfirmationPendingContent } from 'components/TransactionConfirmationModal'
 
 const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://veganswap.finance/',
+    href: '/',
   },
   {
     label: 'Trade',
@@ -22,46 +23,39 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Farms',
+    label: 'Farms-coming soon',
+    
     icon: 'FarmIcon',
-    href: 'https://veganswap.finance/farms',
+    href: '',
   },
   {
-    label: 'Pools',
+    label: 'Pools-coming soon',
     icon: 'PoolIcon',
-    href: 'https://veganswap.finance/pools',
+    href: '',
   },
   {
-    label: 'Price Chart',
+    label: 'Price Chart-coming soon',
     icon: 'ChartIcon',
-    href: 'https://veganswap.finance/chart'
+    href: ''
   },
-  {
-    label: 'Audits',
-    icon: 'AuditIcon',
-    items: [
-      {
-        label: 'Techrate',
-        href: 'https://veganswap.finance/files/techrateAudit.pdf',
-      },
-    ],
-  },
+ 
+  
   // {
   //   label: 'Lottery',
   //   icon: 'TicketIcon',
   //   href: 'https://www.goosedefi.com/lottery'
   // },
   {
-    label: 'Our Partners',
+    label: 'Our Social',
     icon: 'GroupsIcon',
     items: [
       {
-        label: 'Whirl Finance',
-        href: 'https://www.whirl-finance.com/',
+        label: "Telegram",
+        href: 'https://t.me/multichainfin/',
       },
       {
-        label: 'FlashX Ultra',
-        href: 'https://www.flashxcoinofficial.com/'
+        label: 'Twitter',
+        href: 'https://twitter.com/multichainfin'
       }
     ],
   },
@@ -70,13 +64,10 @@ const config: MenuEntry[] = [
     icon: 'ListingIcon',
     items: [
       {
-        label: 'DappRadar',
-        href: 'https://dappradar.com/binance-smart-chain/defi/vegan-swap',
+        label: 'Pancakeswap-coming soon',
+        href: '',
       },
-      {
-        label: 'Blockfolio',
-        href: 'https://blockfolio.com/coin/VEGAN',
-      },
+      
     ],
   },
   {
@@ -88,8 +79,8 @@ const config: MenuEntry[] = [
         href: 'https://vegandefi.medium.com/vegan-swap-roadmap-94d69f7653b',
       },
       {
-        label: 'Overview',
-        href: 'https://pancakeswap.info/token/0x901e58695306b5c33c5169334e921a4cf4841571',
+        label: 'PreSale',
+        href: '/',
       },
       // {
       //   label: 'CoinGecko',
@@ -111,7 +102,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: "Github",
-        href: "https://github.com/veganswap-defi/",
+        href: "https://github.com/MultiChain97/",
       },
       // {
       //   label: "Docs",
@@ -119,7 +110,7 @@ const config: MenuEntry[] = [
       // },
       {
         label: "Blog",
-        href: "https://vegandefi.medium.com/",
+        href: "/",
       },
     ],
   },
