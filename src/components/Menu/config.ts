@@ -98,7 +98,7 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Mores',
+    label: 'Moress',
     icon: 'MoreIcon',
     items: [
       {
